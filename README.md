@@ -31,7 +31,7 @@ npm run package
 
 `npm run check` lists the files that will go into the VSIX.
 
-2. In Cursor, open the Command Palette and run **Extensions: Install from VSIX…**. Pick the generated `synthwave-cursor-0.2.0.vsix`.
+2. In Cursor, open the Command Palette and run **Extensions: Install from VSIX…**. Pick the generated `synthwave-cursor-1.0.0.vsix`.
 3. Open the Command Palette and run **Preferences: Color Theme**, then choose **SynthWave '84 Cursor**. Reload the window if the home screen does not refresh.
 
 After you change the theme, package and install the VSIX again the same way. The original Marketplace extension can stay installed. Its theme name is **SynthWave '84**, and this one is **SynthWave '84 Cursor**.
