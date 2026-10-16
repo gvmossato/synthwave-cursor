@@ -1,8 +1,8 @@
 # SynthWave '84 Cursor
 
-![SynthWave '84 banner](./banner.png)
+![SynthWave '84 banner](./images/banner.png)
 
-![SynthWave '84 Cursor in the editor](./theme.png)
+![SynthWave '84 Cursor in the editor](./images/theme.png)
 
 SynthWave '84 Cursor is a full fork of [Robb Owen's SynthWave '84](https://github.com/robb0wen/synthwave-vscode), maintained by [gvmossato](https://github.com/gvmossato) for Cursor.
 
@@ -20,15 +20,18 @@ The separate Cursor Agents window does not use custom themes. It only offers Cur
 
 ## Install
 
-You need Node.js on your PATH. This repo has no npm dependencies of its own.
+You need Node.js 22 or newer. This repo is developed on Node.js 24.21.0, recorded in `.nvmrc`. Packaging uses the pinned `@vscode/vsce` in this repo.
 
-1. From this folder, package the extension:
+1. From this folder, install the packaging tool and build the extension:
 
 ```bash
-npx @vscode/vsce package
+npm ci
+npm run package
 ```
 
-2. In Cursor, open the Command Palette and run **Extensions: Install from VSIX…**. Pick the generated `synthwave-cursor-0.2.0.vsix`.
+`npm run check` lists the files that will go into the VSIX.
+
+2. In Cursor, open the Command Palette and run **Extensions: Install from VSIX…**. Pick the generated `synthwave-cursor-1.0.0.vsix`.
 3. Open the Command Palette and run **Preferences: Color Theme**, then choose **SynthWave '84 Cursor**. Reload the window if the home screen does not refresh.
 
 After you change the theme, package and install the VSIX again the same way. The original Marketplace extension can stay installed. Its theme name is **SynthWave '84**, and this one is **SynthWave '84 Cursor**.
