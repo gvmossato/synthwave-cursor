@@ -6,14 +6,29 @@
     "license": "MIT",
     "author": "Gabriel Mossato",
     "publisher": "synthwave-cursor",
-    "icon": "icon.png",
+    "icon": "images/icon.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/gvmossato/synthwave-cursor"
     },
     "engines": {
-        "vscode": "^1.85.0"
+        "vscode": "^1.85.0",
+        "node": ">=22"
     },
+    "scripts": {
+        "package": "vsce package --no-dependencies",
+        "check": "vsce ls --no-dependencies"
+    },
+    "devDependencies": {
+        "@vscode/vsce": "4.0.0"
+    },
+    "files": [
+        "images/**",
+        "themes/**",
+        "examples/**",
+        "LICENSE",
+        "README.md"
+    ],
     "extensionKind": [
         "ui"
     ],
