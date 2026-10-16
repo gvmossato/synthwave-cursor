@@ -1,65 +1,37 @@
 {
-    "name": "synthwave-vscode",
-    "displayName": "SynthWave '84",
-    "description": "A Synthwave-inspired colour theme to satisfy your neon dreams",
-    "version": "0.1.20",
-    "author": "Robb Owen",
-    "publisher": "RobbOwen",
+    "name": "synthwave-cursor",
+    "displayName": "SynthWave '84 Cursor",
+    "description": "Cursor fork of SynthWave '84. Same neon palette, with workbench colours adapted for Cursor.",
+    "version": "0.2.0",
+    "license": "MIT",
+    "author": "Gabriel Mossato",
+    "publisher": "synthwave-cursor",
     "icon": "icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/robb0wen/synthwave-vscode"
+        "url": "https://github.com/gvmossato/synthwave-cursor"
     },
     "engines": {
-        "vscode": "^1.33.0"
+        "vscode": "^1.85.0"
     },
     "extensionKind": [
         "ui"
     ],
     "keywords": [
         "retro",
-        "80s"
+        "80s",
+        "cursor"
     ],
     "categories": [
         "Themes"
     ],
-    "activationEvents": [
-        "onCommand:synthwave84.enableNeon",
-        "onCommand:synthwave84.disableNeon"
-    ],
-    "main": "./src/extension.js",
     "contributes": {
         "themes": [
             {
-                "label": "SynthWave '84",
+                "label": "SynthWave '84 Cursor",
                 "uiTheme": "vs-dark",
                 "path": "./themes/synthwave-color-theme.json"
             }
-        ],
-        "commands": [
-            {
-                "command": "synthwave84.enableNeon",
-                "title": "Synthwave '84: Enable Neon Dreams"
-            },
-            {
-                "command": "synthwave84.disableNeon",
-                "title": "Synthwave '84: Disable Neon Dreams"
-            }
-        ],
-        "configuration": {
-            "title": "Synthwave '84",
-            "properties": {
-                "synthwave84.brightness": {
-                    "type": "number",
-                    "default": 0.45,
-                    "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
-                },
-                "synthwave84.disableGlow": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Disable the glow effect, but show Synthwave '84 editor chrome updates"
-                }
-            }
-        }
+        ]
     }
 }
